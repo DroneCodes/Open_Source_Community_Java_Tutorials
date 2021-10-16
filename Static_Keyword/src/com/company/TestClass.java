@@ -3,7 +3,7 @@ package com.company;
 public class TestClass {
 
     // Declaring variables as a static
-    // When you define a variable as static, the variable belongs to the object itself not the instance of the object
+    // When you define a variable or method as static, the variable or method belongs to the object itself not the instance of the object
 
     public static String name; // this only belong to the object not the instance of the class
     public int age;
@@ -12,6 +12,16 @@ public class TestClass {
     public TestClass(int age, String skinColor) {
         this.age = age;
         this.skinColor = skinColor;
+    }
+
+    // defiing a static method
+    public static void printsomething() {
+        System.out.println("Printing ....");
+
+    }
+
+    public void print(){
+
     }
 
     public static String getName() {
