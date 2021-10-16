@@ -5,7 +5,7 @@ import java.awt.*;
 public class Main {
 
     public static void main(String[] args) {
-        TestClass.name = "Fisayo";
+        TestClass.name = "Fisayo";  // assigning a name to the variable without instantiating the class
 
         // instance of the test class
 
@@ -18,6 +18,18 @@ public class Main {
 
         TestClass newtestclass =  new TestClass(30, "Chocolate");
         System.out.println(newtestclass.name);
+
+        TestClass.printsomething();
+
+        // Static methods and variables belongs to the object itself and not theinstance of te object
+
+
+        // Why do we use static variables and methods
+        //1. We may want to have a constant variable in all instances of a class
+
+        //2. It is very memory friendly because they can be only one instance of the variable and method in the application
+
+
 
 
     }
